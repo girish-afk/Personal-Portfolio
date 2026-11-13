@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="certBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f18"/>
+      <stop offset="100%" stop-color="#05080e"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Certificate Border & Background -->
+  <rect width="900" height="640" rx="16" fill="url(#certBg)" stroke="#1e293b" stroke-width="4"/>
+  <rect x="25" y="25" width="850" height="590" rx="8" fill="none" stroke="#06b6d4" stroke-width="1.5" stroke-dasharray="10 5"/>
+  <rect x="35" y="35" width="830" height="570" rx="4" fill="none" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- IEEE Brand Header -->
+  <g transform="translate(450, 95)">
+    <!-- IEEE Diamond Emblem -->
+    <polygon points="0,-35 30,0 0,35 -30,0" fill="#0f172a" stroke="#06b6d4" stroke-width="2"/>
+    <text x="0" y="5" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="800" text-anchor="middle">IEEE</text>
+  </g>
+
+  <!-- Certificate Header Text -->
+  <text x="450" y="170" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="14" letter-spacing="4" text-anchor="middle">CERTIFICATE OF PARTICIPATION</text>
+  <text x="450" y="220" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="800" letter-spacing="1" text-anchor="middle">IEEE CODING CHALLENGE 2026</text>
+  
+  <line x1="300" y1="245" x2="600" y2="245" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Presented To -->
+  <text x="450" y="290" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="14" letter-spacing="1" text-anchor="middle">PROUDLY PRESENTED TO</text>
+  <text x="450" y="345" fill="#38bdf8" font-family="system-ui, -apple-system, sans-serif" font-size="38" font-weight="800" letter-spacing="1.5" text-anchor="middle">GIRISH PAWAR</text>
+
+  <!-- Achievement Details -->
+  <text x="450" y="400" fill="#cbd5e1" font-family="system-ui, -apple-system, sans-serif" font-size="16" text-anchor="middle">In recognition of meritorious performance securing</text>
+  
+  <!-- Rank Badge -->
+  <g transform="translate(450, 440)">
+    <rect x="-110" y="-18" width="220" height="36" rx="18" fill="#172554" stroke="url(#goldGrad)" stroke-width="1.5"/>
+    <text x="0" y="5" fill="#fef08a" font-family="'JetBrains Mono', monospace" font-size="15" font-weight="700" text-anchor="middle">★ REPORTED RANK: 6th ★</text>
+  </g>
+
+  <!-- Organization & Date -->
+  <text x="450" y="505" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="15" text-anchor="middle">IEEE Student Branch – Sanjivani University</text>
+  <text x="450" y="535" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="13" text-anchor="middle">EVENT DATE: 23 SEPTEMBER 2026 | ID: IEEE-SB-2026-CC-06</text>
+
+  <!-- Verification Seal Graphic -->
+  <circle cx="750" cy="520" r="42" fill="#0b1320" stroke="#06b6d4" stroke-width="2"/>
+  <circle cx="750" cy="520" r="35" fill="none" stroke="#334155" stroke-width="1" stroke-dasharray="4 2"/>
+  <text x="750" y="524" fill="#06b6d4" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" text-anchor="middle">VERIFIED</text>
+</svg>

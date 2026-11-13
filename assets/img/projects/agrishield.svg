@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1215"/>
+      <stop offset="100%" stop-color="#061814"/>
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" rx="16" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle technical grid -->
+  <line x1="100" y1="0" x2="100" y2="500" stroke="#132a26" stroke-width="1" stroke-dasharray="6 6"/>
+  <line x1="300" y1="0" x2="300" y2="500" stroke="#132a26" stroke-width="1" stroke-dasharray="6 6"/>
+  <line x1="500" y1="0" x2="500" y2="500" stroke="#132a26" stroke-width="1" stroke-dasharray="6 6"/>
+  <line x1="700" y1="0" x2="700" y2="500" stroke="#132a26" stroke-width="1" stroke-dasharray="6 6"/>
+  <line x1="0" y1="150" x2="800" y2="150" stroke="#132a26" stroke-width="1" stroke-dasharray="6 6"/>
+  <line x1="0" y1="350" x2="800" y2="350" stroke="#132a26" stroke-width="1" stroke-dasharray="6 6"/>
+
+  <!-- AgriShield Emblem -->
+  <g transform="translate(400, 210)">
+    <!-- Outer Shield Contour -->
+    <path d="M0 -110 L90 -60 C90 30, 45 100, 0 130 C-45 100, -90 30, -90 -60 Z" fill="#08201a" stroke="url(#shieldGrad)" stroke-width="4"/>
+    <!-- Plant Sprout Vector Inside Shield -->
+    <path d="M0 70 C0 10, -40 20, -40 -15 C-40 -45, 0 -30, 0 -30" stroke="#34d399" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M0 70 C0 10, 40 20, 40 -15 C40 -45, 0 -30, 0 -30" stroke="#06b6d4" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <line x1="0" y1="70" x2="0" y2="-40" stroke="#6ee7b7" stroke-width="4" stroke-linecap="round"/>
+    <!-- Pulse sensor nodes -->
+    <circle cx="-50" cy="-60" r="4" fill="#10b981"/>
+    <circle cx="50" cy="-60" r="4" fill="#06b6d4"/>
+    <circle cx="0" cy="130" r="5" fill="#38bdf8"/>
+  </g>
+
+  <!-- Title Badge -->
+  <rect x="250" y="390" width="300" height="48" rx="8" fill="#0b171c" stroke="#10b981" stroke-width="1"/>
+  <text x="400" y="420" fill="#f0fdf4" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="700" letter-spacing="2" text-anchor="middle">AGRISHIELD // AI DECISION PLATFORM</text>
+</svg>

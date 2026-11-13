@@ -1,0 +1,5 @@
+# Protect internal core configuration and schema files from direct browser access
+<FilesMatch "(?i)^(env\..*\.php|env\.php|schema\.sql|seed\.php)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>

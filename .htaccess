@@ -1,0 +1,29 @@
+# Apache Configuration & Security Rules
+# Girish Pawar — Personal Developer Portfolio
+
+# Disable directory browsing
+Options -Indexes
+
+# Protect sensitive configuration, backups, SQL schemas, and logs
+<FilesMatch "(?i)^(\.env.*|env\..*\.php|.*\.sql|portfolio_store\.json|.*\.bak|.*\.orig|.*\.log|\.git.*)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Protect data directory
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^data/ - [F,L]
+    RewriteRule ^backups/ - [F,L]
+</IfModule>
+
+# Security Headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Custom 404 handler
+ErrorDocument 404 /404.php

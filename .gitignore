@@ -1,0 +1,28 @@
+# Girish Pawar Portfolio & CMS .gitignore
+# Prevent sensitive credentials, backups, and temporary files from being committed
+
+# Environment & Credentials
+core/env.local.php
+core/env.production.php
+
+# Logs & Runtime Diagnostics
+data/*.log
+*.log
+
+# Backups & Archives
+backups/
+*.bak
+*.orig
+*.zip
+*.tar.gz
+
+# System & OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor Directories
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace

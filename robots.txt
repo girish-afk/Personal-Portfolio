@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /core/
+Disallow: /data/
+Disallow: /includes/
+
+Sitemap: https://girish-afk.github.io/sitemap.xml
